@@ -24,5 +24,15 @@ jobs:
         with:
           name: "HM University Certificate"
           path: |
-            stchi-cert.pdf
-            stlinus-cert.pdf
+            ./dist/stchi-cert.pdf
+            ./dist/stlinus-cert.pdf
+
+      - name: Convert to png
+        uses: JacobLinCool/piconvert@0.4.2
+          with:
+            src: ./dist
+            dist: ./dist
+            inputs: pdf
+            outputs: svg, png
+            force: false
+            verbose: false

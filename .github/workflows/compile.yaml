@@ -21,7 +21,6 @@ jobs:
 
       - name: Create dist and mv
         run: |
-          mkdir dist
           mv stchi-cert.pdf dist/stchi-cert.pdf
           mv stlinus-cert.pdf dist/stlinus-cert.pdf
 

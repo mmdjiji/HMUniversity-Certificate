@@ -25,15 +25,16 @@ jobs:
           mv stchi-cert.pdf dist/stchi-cert.pdf
           mv stlinus-cert.pdf dist/stlinus-cert.pdf
 
-      - name: Convert to png
-        uses: JacobLinCool/piconvert@0.4.2
-        with:
-          src: ./dist
-          dist: ./dist
-          inputs: pdf
-          outputs: svg, png
-          force: false
-          verbose: false
+      # Bad effect
+      # - name: Convert to png
+      #   uses: JacobLinCool/piconvert@0.4.2
+      #   with:
+      #     src: ./dist
+      #     dist: ./dist
+      #     inputs: pdf
+      #     outputs: svg, png
+      #     force: false
+      #     verbose: false
       
       - name: Upload Artifact
         uses: actions/upload-artifact@v2

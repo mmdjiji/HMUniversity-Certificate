@@ -2,6 +2,7 @@
 
 HM University Certificate
 
+![My certificate](dist/stlinus-cert.png)
 
 ## Usage
 
